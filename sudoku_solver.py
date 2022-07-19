@@ -131,12 +131,6 @@ center_window(win, 700, 700)
 win.resizable(False, False)
 win.protocol('WM_DELETE_WINDOW', closeWindow)
 
-from icon import Icon
-with open('tmp.ico','wb') as tmp:
-    tmp.write(base64.b64decode(Icon().img))
-win.iconbitmap('tmp.ico')
-os.remove('tmp.ico')
-
 A = "#FCF3B8"
 B = "#B6FCFA"
 color = [A,A,A,B,B,B,A,A,A,
